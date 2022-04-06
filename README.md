@@ -1,5 +1,4 @@
-# Short Scripts and One-line commands
- 
+# Short Scripts and one-liners
 ## Collection of useful short scripts
 
 
