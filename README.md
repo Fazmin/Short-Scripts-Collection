@@ -22,3 +22,12 @@ Get-ChildItem *.jpg | %{Rename-Item $_ -NewName ('1000100_{0:D4}.jpg' -f $i++)}
 ```
 echo "ls -l" | at midnight
 ```
+
+#### Mound folder with sshfs
+ 
+- Mount a folder or filesystem using SSH
+
+##### example:
+```
+sshfs name@server:/path/to/folder /path/to/mount/point
+```
