@@ -31,3 +31,10 @@ echo "ls -l" | at midnight
 ```
 sshfs name@server:/path/to/folder /path/to/mount/point
 ```
+
+- Add a prifix in to filenames bulk
+
+##### example:
+```
+ rename 's/^/prefix/' *
+```
