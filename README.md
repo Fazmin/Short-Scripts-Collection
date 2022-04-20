@@ -36,5 +36,13 @@ sshfs name@server:/path/to/folder /path/to/mount/point
 
 ##### example:
 ```
- rename 's/^/prefix/' *
+rename 's/^/prefix/' *
 ```
+
+- Set an audible alarm when a IP comes online - realy works
+
+##### example:
+```
+ping -i 60 -a IP_address
+```
+
