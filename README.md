@@ -46,3 +46,10 @@ rename 's/^/prefix/' *
 ping -i 60 -a IP_address
 ```
 
+- List active connections and the number using NETSTAT
+
+##### example:
+```
+netstat -ntu |  awk '{print $5}' |  cut -d: -f1 |  sort |  uniq -c |  sort -n
+```
+
