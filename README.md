@@ -46,10 +46,17 @@ rename 's/^/prefix/' *
 ping -i 60 -a IP_address
 ```
 
-- List active connections and the number using NETSTAT
+- List active connections and the number using NETSTAT - Linux only
 
 ##### example:
 ```
 netstat -ntu |  awk '{print $5}' |  cut -d: -f1 |  sort |  uniq -c |  sort -n
+```
+
+- Remove all but a certain file (in a directory)
+
+##### example:
+```
+rm -f !(dontremove_filename.txt)
 ```
 
