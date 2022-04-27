@@ -60,3 +60,9 @@ netstat -ntu |  awk '{print $5}' |  cut -d: -f1 |  sort |  uniq -c |  sort -n
 rm -f !(dontremove_filename.txt)
 ```
 
+- List apps that are connected to the intenet at the moment
+
+##### example:
+```
+ lsof -P -i -n |  cut -f 1 -d " "|  uniq |  tail -n +2
+ ```
