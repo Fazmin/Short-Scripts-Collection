@@ -65,4 +65,12 @@ rm -f !(dontremove_filename.txt)
 ##### example:
 ```
  lsof -P -i -n |  cut -f 1 -d " "|  uniq |  tail -n +2
- ```
+```
+
+- Convert uppercase files to lowercase files - bulk
+
+##### example:
+```
+ rename 'y/A-Z/a-z/' *
+```
+ 
