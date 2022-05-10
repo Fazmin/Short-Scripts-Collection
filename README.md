@@ -73,4 +73,18 @@ rm -f !(dontremove_filename.txt)
 ```
  rename 'y/A-Z/a-z/' *
 ```
+
+- Quick and live ssh network throughput test. Might need to install PV
+
+##### example:
+```
+ pv /dev/zero|ssh $host 'cat > /dev/null'
+```
+
+- All IPS connected to the current machine
+
+##### example:
+```
+ netstat -lantp |  grep ESTABLISHED | awk '{print $5}' |  awk -F: '{print $1}' |  sort -u
+```
  
