@@ -88,3 +88,9 @@ rm -f !(dontremove_filename.txt)
  netstat -lantp |  grep ESTABLISHED | awk '{print $5}' |  awk -F: '{print $1}' |  sort -u
 ```
  
+- Copy a file with progress bar and save hash to a seperate file (You can add this to a loop for multiple files)
+
+##### example:
+```
+pv file.iso | tee >(sha1sum > file.sha1) > file-copy.txt
+```
