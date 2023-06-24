@@ -94,3 +94,8 @@ rm -f !(dontremove_filename.txt)
 ```
 pv file.iso | tee >(sha1sum > file.sha1) > file-copy.txt
 ```
+
+- Create requirement.txt file on a python venv 
+
+##### example:
+pip3 freeze > requirements.txt
